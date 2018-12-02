@@ -6,9 +6,27 @@
 
 第二部分开始则为vue部分，请移步到该链接下载查看：[从零开始通过node.js和webpack构建vue项目](https://github.com/kouok/webpackHelloVue)
 
-## 可以基于已经构建好的基础的webpack项目再添加vue的配置
+### 快速安装启动
 
-基础的webpack项目已经成功可以通过热更新实现模板页+css解析+less解析+JS打包+node模块
+1. 下载到本地
+
+    `git clone https://github.com/kouok/webpackHello.git`
+
+2. 安装依赖包
+
+    `cnpm install`
+
+3. 开启服务器和自动刷新（热启动）
+
+    `cnpm start`
+
+4. 大功告成！
+
+    现在你可以在src中做任何修改，比如在index.html中新增代码，在css、less中增删改查都可以不用刷新的在浏览器中看到效果了。
+
+## 使用node.js+webpack 4从零开始构建一个项目
+
+基础的webpack项目已经成功可以通过热更新实现模板页+css解析+less解析+JS打包+node模块+图标字体
 
 webpack的webpack.config.js需要到webpack官网复制粘贴，然后根据配置要求，再粘贴对应的代码过来。
 
