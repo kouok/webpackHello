@@ -1,0 +1,15 @@
+# 忽略node_modules和dist文件夹
+node_modules
+dist
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Log files
+npm-debug.log*

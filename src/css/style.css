@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding:0
+}
+
+#bgimg{
+    /* background: url(../assets/google.png); */
+    background-image: url('../assets/google.png');
+    width: 200px;
+    height: 200px;
+}
