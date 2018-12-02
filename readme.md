@@ -1,6 +1,12 @@
-[https://img.shields.io/badge/npm-%3E5.6.0-green.svg](https://www.npmjs.com/)
-[https://img.shields.io/badge/node.js-%3E8.11-green.svg](https://nodejs.org/)
-
+<a href="https://www.npmjs.com/">
+    <img src="https://img.shields.io/badge/npm-%3E5.6.0-green.svg">
+</a>
+<a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/node.js-%3E8.11-green.svg" alt="install size">
+</a>
+<a href="https://www.webpackjs.com/">
+    <img src="https://img.shields.io/badge/webpack-%3E4.17-blue.svg" alt="install size">
+</a>
 
 # 从零开始通过node.js和webpack构建移动端项目（基于webpack+node.js的移动端或PC端模板项目）
 
