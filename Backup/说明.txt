@@ -1,0 +1,3 @@
+package.json与webpack.config.js配合使用
+
+package-build.json与其他3个js配置文件使用，使用时放到项目根目录下，并且需要将package-build.json修改为package.json

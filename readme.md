@@ -98,4 +98,34 @@ webpack的webpack.config.js需要到webpack官网复制粘贴，然后根据配�
     删除文件：`git rm -r --cached 文件路径/文件名.txt`
     删除文件夹：`git rm -r --cached 文件夹名`
 
-3. 因为使用了热启动，所以构建时并不会在项目文件夹中生成dist目录，该目录一直在内存中被读取。
+3. 因为使用了热启动，所以构建时并不会在项目文件夹中生成dist目录，该目录一直在内存中被读取。那么如何生成dist目录呢？可参考如下方法。
+
+    + 安装webpack-merge `npm install --save-dev webpack-merge`
+    + 将原本的webpack.config.js拆分为3个配置文件：
+
+        ```
+        webpack-demo
+        |- package.json
+        - |- webpack.config.js
+        + |- webpack.common.js
+        + |- webpack.dev.js
+        + |- webpack.prod.js
+        ```
+        原始的webpack.config.js和三个配置文件见：Backup中的同名文件
+
+    + 修改package.json文件的script部分：
+
+        ```
+        "scripts": {
+        - "start": "webpack-dev-server --open",
+        + "start": "webpack-dev-server --open --config webpack.dev.js",
+        - "build": "webpack"
+        + "build": "webpack --config webpack.prod.js"
+        },
+        ```
+
+        原始的package.json和新的package.json见Backup文件夹中的同名文件
+
+    + 如果页面太多，会导致生成的dist目录混乱，这时，可以使用 `npm install clean-webpack-plugin --save-dev` 自动清理dist目录，具体用法：[https://webpack.docschina.org/guides/output-management/](https://webpack.docschina.org/guides/output-management/)
+
+    + 更多请查看：[生产环境构建](https://webpack.docschina.org/guides/production/)
