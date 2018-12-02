@@ -20,17 +20,21 @@
 
 1. 下载到本地
 
-    `git clone https://github.com/kouok/webpackHello.git`
+    `$ git clone https://github.com/kouok/webpackHello.git`
 
 2. 安装依赖包
 
-    `cnpm install`
+    `$ cnpm install`
 
 3. 开启服务器和自动刷新（热启动）
 
-    `cnpm start`
+    `$ cnpm start`
 
-4. 大功告成！
+4. 如果需要生成dist目录，请执行以下命令
+
+    `$ cnpm build`
+
+5. 大功告成！
 
     现在你可以在src中做任何修改，比如在index.html中新增代码，在css、less中增删改查都可以不用刷新的在浏览器中看到效果了。
 
