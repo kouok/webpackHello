@@ -1,3 +1,7 @@
+[https://img.shields.io/badge/npm-%3E5.6.0-green.svg](https://www.npmjs.com/)
+[https://img.shields.io/badge/node.js-%3E8.11-green.svg](https://nodejs.org/)
+
+
 # 从零开始通过node.js和webpack构建移动端项目（基于webpack+node.js的移动端或PC端模板项目）
 
 本Demo分为两部分：
@@ -87,3 +91,5 @@ webpack的webpack.config.js需要到webpack官网复制粘贴，然后根据配�
 2. 如果误提交了本地文件夹到线上，想要删除线上的文件夹或文件，可以通过以下指令进行删除，且切断本地与远程的关联，相当于是加入了.gitignore
     删除文件：`git rm -r --cached 文件路径/文件名.txt`
     删除文件夹：`git rm -r --cached 文件夹名`
+
+3. 因为使用了热启动，所以构建时并不会在项目文件夹中生成dist目录，该目录一直在内存中被读取。
