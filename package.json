@@ -1,5 +1,5 @@
 {
-  "name": "vuefirst",
+  "name": "webpackHello",
   "version": "1.0.0",
   "description": "手动构建vue的项目演示",
   "main": "webpack.config.js",
