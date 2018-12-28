@@ -135,3 +135,5 @@ webpack的webpack.config.js需要到webpack官网复制粘贴，然后根据配�
     + 更多请查看：[生产环境构建](https://webpack.docschina.org/guides/production/)
 
 4. 注意：如果构建时报错，错误信息类似于'这看起来不是npm的问题'时，十有八九是因为依赖包有问题，可以将node_modules文件夹删除再重新通过`cnpm install`安装然后构建
+
+5. 现在假设一台电脑有2个git账号，如何处理？ 
